@@ -1,115 +1,184 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Hello World</h1>
-<h2>rzėdȧfdpevkm ẇeewokßpc</h2>
-<p>I'm hosted with GitHub Pages.</p>
+import { Metadata } from "next";
 
-<body>
-<header id="header" class="fixed-top d-flex align-items-center header-scrolled">
-<div class="container d-flex align-items-center">
-<h1 class="logo me-auto">
-<a href="/zh" class="logo me-auto">
-<img src="/img/header_and_footer/logo_from_fb.png" alt="" class="img-fluid">
-</a>
-<a href="/zh"> Taiwan Olympiad in Linguistics </a>
-</h1>
-<nav id="navbar" class="navbar">
-<ul><li><a href="/zh" class="active">首頁</a></li>
-<li><a href="/zh/recent">最新消息</a></li>
-<li><a href="/zh/about-tol">關於TOL</a></li>
-<li class="dropdown"><a href="#"><span>學生專區</span>
-<i class="bi bi-chevron-down"></i></a>
-<ul><li><a href="/zh/student/previous-problems">歷屆試題</a></li>
-<li><a href="/zh/student/learning-resources">學習資源</a></li>
-<li><a href="/zh/student/calendar">行事曆</a></li>
-<li><a href="/zh/student/register-information">報名方式</a></li></ul></li>
-<li><a href="/zh/previous-results">歷年表現</a></li>
-<li><a href="/zh/gallery">推廣影音</a></li>
-<li><a href="/zh/faq">FAQ</a></li>
-<li><a href="/zh/about-us">籌辦單位</a></li>
-<li class="dropdown"><a><i class="bi bi-globe" style="font-size:120%"></i>
-<i class="bi bi-chevron-down"></i></a>
-<ul><li><a href="#">中文</a></li>
-<li><a href="/en">English</a></li></ul></li></ul>
-<i class="bi bi-list mobile-nav-toggle"></i>
-</nav>
+export const metadata: Metadata = {
+  title: "最新消息 - 臺灣語言學奧林匹亞 Taiwan Olympiad in Linguistics",
+};
+
+export default function Recent() {
+  return (
+    <main id="main">
+
+    {/* <!-- ======= Breadcrumbs ======= --> */}
+    <section id="breadcrumbs" className="breadcrumbs">
+      <div className="container">
+
+        <div className="d-flex justify-content-between align-items-center">
+          <h2>最新消息</h2>
+          <ol>
+            <li><a href="/">首頁</a></li>
+            <li>最新消息</li>
+          </ol>
+        </div>
+
+      </div>
+    </section>
+
+    
+
+    {/* <!-- ======= Frequently Asked Questions Section ======= --> */}
+    <section id="faq" className="faq">
+      <div className="container">
+        <div className="section-title">
+          <p>最新消息</p>
+        </div>
+
+	<div className="row faq-item d-flex align-items-stretch"> 
+  <div className="col-lg-5">
+    <i className='bx bxs-pin'></i>
+    <h4><b>2025/02/07 國際語奧臺灣代表隊初選熱烈報名中！</b></h4>
+  </div>
+  <div className="col-lg-7">
+    <p>
+      請至 <a href="https://reg.ioltw.org">【全國初選報名系統】</a> 報名
+      <br />
+      活動日期為 2025/03/02（日），報名費用為 NT$1000
+      <br />
+      語奧當天將再退中、南、東、離島學生補助現金 500 元，繳費時仍以上述金額繳交。
+      <br />
+      臺灣語奧活動除地震、颱風等天災不可抗力因素，報名後恕不退費。
+      <br />
+      更多資訊詳見台灣語奧 FB <a href="https://www.facebook.com/Taiwan.Olympiad.in.Linguistics/?locale=zh_TW">【粉絲專頁】</a>
+    </p>
+    <p>
+      <a href="/img/recent_attachments/2025臺灣語言學奧林匹亞 (1)_page-0001.jpg" target="_blank">
+       <img src="/img/recent_attachments/2025臺灣語言學奧林匹亞 (1)_page-0001.jpg"  alt="國際語奧台灣代表隊初選" title="國際語奧台灣代表隊初選" style={{ width: "60%" }} />
+      </a>
+    </p>
+  </div>
 </div>
-</header>
-<main id="main">
-  <section id="breadcrumbs" class="breadcrumbs">
-    <div class="container">
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>最新消息</h2>
-        <ol><li><a href="/">首頁</a></li>
-          <li>最新消息</li></ol></div></div>
-  </section><section id="faq" class="faq">
-    <div class="container">
-      <div class="section-title">
-        <p>最新消息</p></div>
-      <div class="row faq-item d-flex align-items-stretch">
-        <div class="col-lg-5">
-          <i class="bx bxs-pin"></i>
-          <h4><b>2025/03/14 台灣國手選拔初賽結果 & 解答公布</b></h4></div>
-        <div class="col-lg-7">
-          <p>全國初選競賽結果與解答出爐！
-            <br>本次一階國手之正取、備取名單請參見圖示。
-            <br>中、英文試題解答與競賽結果統計歡迎參考下列連結。
-            <br>本屆競賽實際應考人數 165 人，錄取 17 名 (應考人數前 10%) 為正取一階國手，8 名 (應考人數前 15%) 為備取。 
-            <br>更多資訊詳見台灣語奧 FB 
-          <p><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1AFFJ3pXBTkMwuKdR_Cf0cgMStcBYAGto%2Fview%3Fusp%3Ddrive_link%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3makWmrPwrc06wF6w-SOo30KInSP8wsU-7fmfQST81JCzCXjoAarTmLKA_aem_8Jcy0a_Cch8PmNFcUqpvmQ&h=AT38_y_Ja0uDJlFcZL1Haq0Zez2YNDEI2XMFI83gKIpsIcV1-S8mFBU3z6eGgkKVCX3cSqPbLeoMFel127CqVDmoqvg6uV78FwJGh4AC1o4foo3TIRHS0zeePTY_i3fHf2ohc3jhu1lgc0NzYBe0eaV7D56yzdr-&__tn__=-UK-R&c[0]=AT1ulpTPGMEtXibHkUabMRgGFs0C5QO65v1olhV3j0BSAygAx8TSOeKgpzYSLakECL4gAhzCIyQFuBVDZQdKWt8mXgvJmU-muenmkO8GQOmFBdES_TNI74FICLV0DJ03amtS-gCkVcxkmsOtsovQ6MfGrBHlIo6DJpTMf87KSYcAYRDSwN9SsH7aCo3Havkf2MWnKTtv7xNH8WC9d69SvoWLIR0">【📃中文解答】</a></p>
-          <p><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F13NWqD3DCENsnuQaRhiSNNQ_uDBDKhg5R%2Fview%3Fusp%3Ddrive_link%26fbclid%3DIwZXh0bgNhZW0CMTAAAR2qJTf5Ssd3nEKztPQfJj6jkSP-tHIkTyurGPM3anE5LFe7Ig8fVmPDLmU_aem_OYh8VBWOidJS0zJw6a679A&h=AT0UzU2tlicN3OuRqqs55VyoBcQwQZoVebTWhkCORY1k1r8GO4MobYx_u7qY3BVQWU2yA0muKEOTty9Al9mkFHQIDZiqo4wLSXvQEXgIYbECTGynqyNxT3fEzZ3rELcKlWUYowpzZORMp3KxKHm4tSI7pDbP3ClX&__tn__=-UK-R&c[0]=AT1ulpTPGMEtXibHkUabMRgGFs0C5QO65v1olhV3j0BSAygAx8TSOeKgpzYSLakECL4gAhzCIyQFuBVDZQdKWt8mXgvJmU-muenmkO8GQOmFBdES_TNI74FICLV0DJ03amtS-gCkVcxkmsOtsovQ6MfGrBHlIo6DJpTMf87KSYcAYRDSwN9SsH7aCo3Havkf2MWnKTtv7xNH8WC9d69SvoWLIR0">【📃English solutions】</a></p>
-          <p><a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1Vyt_5WISmRWCVOEvrv6JLcdqYjZmswxt%2Fview%3Fusp%3Ddrive_link%26fbclid%3DIwZXh0bgNhZW0CMTAAAR3kgJ3fmGgBF0BnLL6YxbPhUaqCMN_1nBvQ63LS-hQ-36prWhdLpwWNcX0_aem_8Qy7oVc-8Bu5lSt8qbvzCA&h=AT0kYN3Dqi1GKDxzuRoEppT7oJHTHmGxechS9sCV99f6FqyeJgJsBGsfYRZrnIMkEezFTY2HlDFAEHxbRgx7PFsJ9xMgUOdM2Yv8keWYfxZR97bneA1SCW94Am3elkgRFO6n7sxRt3C1z-shVYXoQICiBRBPwtY5&__tn__=-UK-R&c[0]=AT1ulpTPGMEtXibHkUabMRgGFs0C5QO65v1olhV3j0BSAygAx8TSOeKgpzYSLakECL4gAhzCIyQFuBVDZQdKWt8mXgvJmU-muenmkO8GQOmFBdES_TNI74FICLV0DJ03amtS-gCkVcxkmsOtsovQ6MfGrBHlIo6DJpTMf87KSYcAYRDSwN9SsH7aCo3Havkf2MWnKTtv7xNH8WC9d69SvoWLIR0">【📃 競賽結果統計】</a></p>    
-          <p>★ 個人成績可於 3/16 12 pm 後於台灣語奧報名系統查詢，敬請耐心等候，謝謝配合。
-              <br>★ 如正取一階國手無法參加決賽（APLO 亞太語奧），將通知備取依序遞補。</p>
-              </div></div>
-      <div class="row faq-item d-flex align-items-stretch">
-        <div class="col-lg-5">
-          <i class="bx bxs-pin"></i>
-          <h4><b>2025/02/07 國際語奧臺灣代表隊初選熱烈報名中！</b></h4></div>
-        <div class="col-lg-7">
-          <p>請至 <a href="https://reg.ioltw.org">【全國初選報名系統】</a> 報名
-            <br>活動日期為 2025/03/02（日），報名費用為 NT$1000
-            <br>語奧當天將再退中、南、東、離島學生補助現金 500 元，繳費時仍以上述金額繳交。
-            <br>臺灣語奧活動除地震、颱風等天災不可抗力因素，報名後恕不退費。
-            <br>更多資訊詳見台灣語奧 FB 
-            <a href="https://www.facebook.com/Taiwan.Olympiad.in.Linguistics/?locale=zh_TW">【粉絲專頁】</a></p>
-          <p><a href="/img/recent_attachments/2025臺灣語言學奧林匹亞 (1)_page-0001.jpg" target="_blank">
-            <img src="/img/recent_attachments/2025臺灣語言學奧林匹亞 (1)_page-0001.jpg" alt="國際語奧台灣代表隊初選" title="國際語奧台灣代表隊初選" style="width:60%"></a></p></div></div><div class="row faq-item d-flex align-items-stretch"><div class="col-lg-5"><i class="bx bxs-pin"></i><h4><b>2025/01/15 台灣語奧解題營開放啦！</b></h4></div><div class="col-lg-7"><p>本次解題營活動日期為2/5至2/7三日，舉辦於臺大文學院演講廳。報名期限為1/15-1/21，詳情請參照報名系統內資訊，名額有限，請儘速報名喔！</p>
-              <p>🔔小提醒：以前曾註冊過的同學，仍須再註冊一次喔！每年因考生資料眾多，皆會清除往年資料。</p>
-              <p><b>報名連結：</b>
-                <a href="https://reg.ioltw.org" target="_blank" rel="noopener noreferrer">https://reg.ioltw.org</a></p>
-              <p><a href="/img/recent_attachments/91a809f9-ad5f-45c4-8cd5-17f8aaf0e622.jpg" target="_blank">
-                <img src="/img/recent_attachments/91a809f9-ad5f-45c4-8cd5-17f8aaf0e622.jpg" alt="台灣語奧解題營" title="台灣語奧解題營" style="width:60%"></a></p>
-              <p><a href="/img/recent_attachments/c2def618-ffb7-47df-b3da-2670a8b829db.jpg" target="_blank">
-                <img src="/img/recent_attachments/c2def618-ffb7-47df-b3da-2670a8b829db.jpg" alt="台灣語奧解題營時程表" title="台灣語奧解題營時程表" style="width:60%"></a></p></div></div>
-      <div class="row faq-item d-flex align-items-stretch"><div class="col-lg-5"><i class="bx bxs-pin"></i>
-        <h4><b>2024/09/08　2024-2025 活動日期預告（部分）</b></h4></div>
-        <div class="col-lg-7">
-          <p><a href="/img/recent_attachments/upcoming_events.png" target="_blank">
-            <img src="/img/recent_attachments/upcoming_events.png" alt="2024-25 Upcoming Events" title="2024-25 Upcoming Events" style="width:60%"></a></p></div></div>
-      <div class="row faq-item d-flex align-items-stretch">
-        <div class="col-lg-5">
-          <i class="bx bxs-pin"></i>
-          <h4><b>2024/08/18　IOL 2024 國際語奧台灣隊獲個人賽三銀一銅一佳作、團體賽一銅佳績！</b></h4></div>
-              <div class="col-lg-7"><p>恭喜台灣隊的國手們！新聞報導：
-                <br><a href="https://www.cna.com.tw/news/aopl/202407310039.aspx">【中央社新聞】國際語奧台灣隊大放異彩 勇奪多項榮譽</a>
-                <br><a href="https://sec.ntu.edu.tw/epaper/article.asp?num=1612&amp;sn=29180">【臺大校訊】臺大教授帶領臺灣代表隊勇奪「2024國際語言學奧林匹亞競賽」佳績並取得2025主辦權</a></p></div></div>
-      <div class="row faq-item d-flex align-items-stretch">
-        <div class="col-lg-5">
-          <i class="bx bxs-pin"></i>
-          <h4><b>2024/07/05　第三屆臺灣中學生語言科學科展 開始報名！</b></h4></div>
-        <div class="col-lg-7">
-          <p>有興趣做語言學／語言科學的探索嗎？快來報名科展把你的發現分享給大家！
-            <br>歡迎點選：<a href="https://ioltw.github.io/scifair-2024/">【第三屆科展網站】</a></p></div></div>
-      <div class="row faq-item d-flex align-items-stretch">
-        <div class="col-lg-5">
-          <i class="bx bxs-pin"></i>
-          <h4><b>2024/06/04　第一&amp;第二屆語言解謎鐵人賽【試題及參考解答】</b></h4></div>
-        <div class="col-lg-7"><p><a href="https://drive.google.com/drive/u/0/folders/1tGe6TU9UxLISKfsq7jnQ0szTA5PdK63L">【試題及參考解答】</a></p></div></div>
-      <div class="row faq-item d-flex align-items-stretch">
-        <div class="col-lg-5">
-          <i class="bx bxs-pin"></i><h4><b>2024/05/30　第二屆語言解謎鐵人賽【活動花絮】</b></h4></div><div class="col-lg-7"><p>第二屆語言解謎鐵人賽於2024/05/25（六）順利舉辦，相信大家在三小時的合作解謎中都對語言學有更深的投入跟了解，歡迎大家透過我們的花絮影像回顧這次比賽，也歡迎繼續支持台灣語奧、語言學科展以及語言解謎鐵人賽！<a href="https://drive.google.com/drive/u/0/folders/1IbExfv24ihhGj-KSAADmbPd4Y4xt9BI-">【照片&amp;影片】</a></p><p><img src="/img/gallery/lingpuz/DSCF2961.JPG" style="width:100%" alt=""></p></div></div><div class="row faq-item d-flex align-items-stretch"><div class="col-lg-5"><i class="bx bxs-pin"></i><h4><b>2024/04/25　國際語奧 IOL2024 臺灣代表隊【國手錄取名單】</b></h4></div><div class="col-lg-7"><p>恭喜台灣隊獲得 2024 亞太語奧 1 金 3 銀 4 銅， 與中國、日本隊並列第一！！<a href="https://aplo.asia/results/aplo-2024-results/">【亞太語奧官方成績】</a><a href="/img/recent_attachments/TOL2024_team_and_APLO2024_rank.pdf">【臺灣國手名單】</a><br><a href="/img/recent_attachments/APLO2024_results.jpg" target="_blank"><img src="/img/recent_attachments/APLO2024_results.jpg" alt="APLO2024_results" title="APLO2024_results" style="width:60%"></a></p></div></div><div class="row faq-item d-flex align-items-stretch"><div class="col-lg-5"><i class="bx bx-help-circle"></i><h4><b>... 更早以前的消息</b></h4></div><div class="col-lg-7"><p>請見 <a href="https://lope.linguistics.ntu.edu.tw/ioltw/zh/">【臺灣語奧舊版網站】</a></p></div></div></div></section></main><footer id="footer"><div class="footer-top"><div class="container"><div class="row"><div class="col-lg-4 col-md-12"><div class="footer-info"><h3>臺灣語言學奧林匹亞</h3><p><strong>Email:</strong> ioltwtwiol@gmail.com<br><strong>主辦單位:</strong> 國立台灣大學語言學研究所<br><strong>協辦單位:</strong> 國立台灣大學文學院<br><strong>聯絡電話:</strong> (02) 3366-4105</p><div class="social-links mt-3"><a href="https://www.facebook.com/Taiwan.Olympiad.in.Linguistics" class="facebook"><i class="bx bxl-facebook"></i></a><a href="https://www.instagram.com/taiwan.olympiad.in.linguistics/" class="instagram"><i class="bx bxl-instagram"></i></a><a href="https://www.youtube.com/@ioltw" class="youtube"><i class="bx bxl-youtube"></i></a></div></div></div><div class="col-lg-3 col-md-6 footer-links"><h4>相關連結</h4><ul><li><i class="bx bx-chevron-right"></i> <a href="https://ioltw.github.io/scifair-2024/">第三屆語言科學科展 (2024)</a></li><li><i class="bx bx-chevron-right"></i> <a href="https://ioling.org/">國際語奧</a></li><li><i class="bx bx-chevron-right"></i> <a href="https://aplo.asia/">亞太語奧</a></li></ul></div><div class="col-lg-3 col-md-6 footer-links"><h4>請支持臺灣語奧！</h4><ul><li><i class="bx bx-chevron-right"></i> <a href="https://www.facebook.com/Taiwan.Olympiad.in.Linguistics">追蹤 FB 粉專</a></li><li><i class="bx bx-chevron-right"></i> <a href="https://shukai.typeform.com/to/xHgP9m">加入團隊</a></li><li><i class="bx bx-chevron-right"></i> <a href="/zh/donation">捐款贊助</a></li></ul></div></div></div></div><div class="container"><div class="copyright">© 台灣語言學奧林匹亞競賽, 2024. 最近更新日期：2025/1/21</div><div class="credits">Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a></div></div></footer><script src="/vendor/bootstrap/js/bootstrap.bundle.min.js" defer=""></script><script src="/vendor/glightbox/js/glightbox.min.js" defer=""></script><script src="/vendor/isotope-layout/isotope.pkgd.min.js" defer=""></script><script src="/vendor/swiper/swiper-bundle.min.js" defer=""></script><script src="/vendor/waypoints/noframework.waypoints.js" defer=""></script><script src="/vendor/php-email-form/validate.js" defer=""></script><script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" defer=""></script><script src="/js/main.js" defer=""></script><script src="/_next/static/chunks/webpack-1b037cfd0835eb9c.js" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:I[2846,[],\"\"]\n3:I[4707,[],\"\"]\n4:I[6423,[],\"\"]\n6:I[1060,[],\"\"]\n7:[]\n"])</script><script>self.__next_f.push([1,"0:[\"$\",\"$L1\",null,{\"buildId\":\"OXlMKYrMDAGYZHbqawK-P\",\"assetPrefix\":\"\",\"urlParts\":[\"\",\"zh\",\"recent\"],\"initialTree\":[\"\",{\"children\":[\"zh\",{\"children\":[\"(ioltw)\",{\"children\":[\"recent\",{\"children\":[\"__PAGE__\",{}]}]}]}]},\"$undefined\",\"$undefined\",true],\"initialSeedData\":[\"\",{\"children\":[\"zh\",{\"children\":[\"(ioltw)\",{\"children\":[\"recent\",{\"children\":[\"__PAGE__\",{},[[\"$L2\",[\"$\",\"main\",null,{\"id\":\"main\",\"children\":[[\"$\",\"section\",null,{\"id\":\"breadcrumbs\",\"className\":\"breadcrumbs\",\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[\"$\",\"div\",null,{\"className\":\"d-flex justify-content-between align-items-center\",\"children\":[[\"$\",\"h2\",null,{\"children\":\"最新消息\"}],[\"$\",\"ol\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/\",\"children\":\"首頁\"}]}],[\"$\",\"li\",null,{\"children\":\"最新消息\"}]]}]]}]}]}],[\"$\",\"section\",null,{\"id\":\"faq\",\"className\":\"faq\",\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[[\"$\",\"div\",null,{\"className\":\"section-title\",\"children\":[\"$\",\"p\",null,{\"children\":\"最新消息\"}]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2025/02/07 國際語奧臺灣代表隊初選熱烈報名中！\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[[\"$\",\"p\",null,{\"children\":[\"請至 \",[\"$\",\"a\",null,{\"href\":\"https://reg.ioltw.org\",\"children\":\"【全國初選報名系統】\"}],\" 報名\",[\"$\",\"br\",null,{}],\"活動日期為 2025/03/02（日），報名費用為 NT$1000\",[\"$\",\"br\",null,{}],\"語奧當天將再退中、南、東、離島學生補助現金 500 元，繳費時仍以上述金額繳交。\",[\"$\",\"br\",null,{}],\"臺灣語奧活動除地震、颱風等天災不可抗力因素，報名後恕不退費。\",[\"$\",\"br\",null,{}],\"更多資訊詳見台灣語奧 FB \",[\"$\",\"a\",null,{\"href\":\"https://www.facebook.com/Taiwan.Olympiad.in.Linguistics/?locale=zh_TW\",\"children\":\"【粉絲專頁】\"}]]}],[\"$\",\"p\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/img/recent_attachments/2025臺灣語言學奧林匹亞 (1)_page-0001.jpg\",\"target\":\"_blank\",\"children\":[\"$\",\"img\",null,{\"src\":\"/img/recent_attachments/2025臺灣語言學奧林匹亞 (1)_page-0001.jpg\",\"alt\":\"國際語奧台灣代表隊初選\",\"title\":\"國際語奧台灣代表隊初選\",\"style\":{\"width\":\"60%\"}}]}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2025/01/15 台灣語奧解題營開放啦！\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[[\"$\",\"p\",null,{\"children\":\"本次解題營活動日期為2/5至2/7三日，舉辦於臺大文學院演講廳。報名期限為1/15-1/21，詳情請參照報名系統內資訊，名額有限，請儘速報名喔！\"}],[\"$\",\"p\",null,{\"children\":\"🔔小提醒：以前曾註冊過的同學，仍須再註冊一次喔！每年因考生資料眾多，皆會清除往年資料。\"}],[\"$\",\"p\",null,{\"children\":[[\"$\",\"b\",null,{\"children\":\"報名連結：\"}],[\"$\",\"a\",null,{\"href\":\"https://reg.ioltw.org\",\"target\":\"_blank\",\"rel\":\"noopener noreferrer\",\"children\":\"https://reg.ioltw.org\"}]]}],[\"$\",\"p\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/img/recent_attachments/91a809f9-ad5f-45c4-8cd5-17f8aaf0e622.jpg\",\"target\":\"_blank\",\"children\":[\"$\",\"img\",null,{\"src\":\"/img/recent_attachments/91a809f9-ad5f-45c4-8cd5-17f8aaf0e622.jpg\",\"alt\":\"台灣語奧解題營\",\"title\":\"台灣語奧解題營\",\"style\":{\"width\":\"60%\"}}]}]}],[\"$\",\"p\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/img/recent_attachments/c2def618-ffb7-47df-b3da-2670a8b829db.jpg\",\"target\":\"_blank\",\"children\":[\"$\",\"img\",null,{\"src\":\"/img/recent_attachments/c2def618-ffb7-47df-b3da-2670a8b829db.jpg\",\"alt\":\"台灣語奧解題營時程表\",\"title\":\"台灣語奧解題營時程表\",\"style\":{\"width\":\"60%\"}}]}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2024/09/08　2024-2025 活動日期預告（部分）\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[\"$\",\"p\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/img/recent_attachments/upcoming_events.png\",\"target\":\"_blank\",\"children\":[\"$\",\"img\",null,{\"src\":\"/img/recent_attachments/upcoming_events.png\",\"alt\":\"2024-25 Upcoming Events\",\"title\":\"2024-25 Upcoming Events\",\"style\":{\"width\":\"60%\"}}]}]}]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2024/08/18　IOL 2024 國際語奧台灣隊獲個人賽三銀一銅一佳作、團體賽一銅佳績！\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[\"$\",\"p\",null,{\"children\":[\"恭喜台灣隊的國手們！新聞報導：\",[\"$\",\"br\",null,{}],[\"$\",\"a\",null,{\"href\":\"https://www.cna.com.tw/news/aopl/202407310039.aspx\",\"children\":\"【中央社新聞】國際語奧台灣隊大放異彩 勇奪多項榮譽\"}],[\"$\",\"br\",null,{}],[\"$\",\"a\",null,{\"href\":\"https://sec.ntu.edu.tw/epaper/article.asp?num=1612\u0026sn=29180\",\"children\":\"【臺大校訊】臺大教授帶領臺灣代表隊勇奪「2024國際語言學奧林匹亞競賽」佳績並取得2025主辦權\"}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2024/07/05　第三屆臺灣中學生語言科學科展 開始報名！\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[\"$\",\"p\",null,{\"children\":[\"有興趣做語言學／語言科學的探索嗎？快來報名科展把你的發現分享給大家！\",[\"$\",\"br\",null,{}],\"歡迎點選：\",[\"$\",\"a\",null,{\"href\":\"https://ioltw.github.io/scifair-2024/\",\"children\":\"【第三屆科展網站】\"}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2024/06/04　第一\u0026第二屆語言解謎鐵人賽【試題及參考解答】\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[\"$\",\"p\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"https://drive.google.com/drive/u/0/folders/1tGe6TU9UxLISKfsq7jnQ0szTA5PdK63L\",\"children\":\"【試題及參考解答】\"}]}]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2024/05/30　第二屆語言解謎鐵人賽【活動花絮】\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[[\"$\",\"p\",null,{\"children\":[\"第二屆語言解謎鐵人賽於2024/05/25（六）順利舉辦，相信大家在三小時的合作解謎中都對語言學有更深的投入跟了解，歡迎大家透過我們的花絮影像回顧這次比賽，也歡迎繼續支持台灣語奧、語言學科展以及語言解謎鐵人賽！\",[\"$\",\"a\",null,{\"href\":\"https://drive.google.com/drive/u/0/folders/1IbExfv24ihhGj-KSAADmbPd4Y4xt9BI-\",\"children\":\"【照片\u0026影片】\"}]]}],[\"$\",\"p\",null,{\"children\":[\"$\",\"img\",null,{\"src\":\"/img/gallery/lingpuz/DSCF2961.JPG\",\"style\":{\"width\":\"100%\"},\"alt\":\"\"}]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bxs-pin\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"2024/04/25　國際語奧 IOL2024 臺灣代表隊【國手錄取名單】\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[\"$\",\"p\",null,{\"children\":[\"恭喜台灣隊獲得 2024 亞太語奧 1 金 3 銀 4 銅， 與中國、日本隊並列第一！！\",[\"$\",\"a\",null,{\"href\":\"https://aplo.asia/results/aplo-2024-results/\",\"children\":\"【亞太語奧官方成績】\"}],[\"$\",\"a\",null,{\"href\":\"/img/recent_attachments/TOL2024_team_and_APLO2024_rank.pdf\",\"children\":\"【臺灣國手名單】\"}],[\"$\",\"br\",null,{}],[\"$\",\"a\",null,{\"href\":\"/img/recent_attachments/APLO2024_results.jpg\",\"target\":\"_blank\",\"children\":[\"$\",\"img\",null,{\"src\":\"/img/recent_attachments/APLO2024_results.jpg\",\"alt\":\"APLO2024_results\",\"title\":\"APLO2024_results\",\"style\":{\"width\":\"60%\"}}]}]]}]}]]}],[\"$\",\"div\",null,{\"className\":\"row faq-item d-flex align-items-stretch\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-5\",\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bx-help-circle\"}],[\"$\",\"h4\",null,{\"children\":[\"$\",\"b\",null,{\"children\":\"... 更早以前的消息\"}]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-7\",\"children\":[\"$\",\"p\",null,{\"children\":[\"請見 \",[\"$\",\"a\",null,{\"href\":\"https://lope.linguistics.ntu.edu.tw/ioltw/zh/\",\"children\":\"【臺灣語奧舊版網站】\"}]]}]}]]}]]}]}]]}],null],null],null]},[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"zh\",\"children\",\"(ioltw)\",\"children\",\"recent\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[[\"$\",\"header\",null,{\"id\":\"header\",\"className\":\"fixed-top d-flex align-items-center\",\"children\":[\"$\",\"div\",null,{\"className\":\"container d-flex align-items-center\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"logo me-auto\",\"children\":[[\"$\",\"a\",null,{\"href\":\"/zh\",\"className\":\"logo me-auto\",\"children\":[\"$\",\"img\",null,{\"src\":\"/img/header_and_footer/logo_from_fb.png\",\"alt\":\"\",\"className\":\"img-fluid\"}]}],[\"$\",\"a\",null,{\"href\":\"/zh\",\"children\":\" Taiwan Olympiad in Linguistics \"}]]}],[\"$\",\"nav\",null,{\"id\":\"navbar\",\"className\":\"navbar\",\"children\":[[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh\",\"className\":\"active\",\"children\":\"首頁\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/recent\",\"children\":\"最新消息\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/about-tol\",\"children\":\"關於TOL\"}]}],[\"$\",\"li\",null,{\"className\":\"dropdown\",\"children\":[[\"$\",\"a\",null,{\"href\":\"#\",\"children\":[[\"$\",\"span\",null,{\"children\":\"學生專區\"}],\" \",[\"$\",\"i\",null,{\"className\":\"bi bi-chevron-down\"}]]}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/student/previous-problems\",\"children\":\"歷屆試題\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/student/learning-resources\",\"children\":\"學習資源\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/student/calendar\",\"children\":\"行事曆\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/student/register-information\",\"children\":\"報名方式\"}]}]]}]]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/previous-results\",\"children\":\"歷年表現\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/gallery\",\"children\":\"推廣影音\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/faq\",\"children\":\"FAQ\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/zh/about-us\",\"children\":\"籌辦單位\"}]}],[\"$\",\"li\",null,{\"className\":\"dropdown\",\"children\":[[\"$\",\"a\",null,{\"children\":[[\"$\",\"i\",null,{\"className\":\"bi bi-globe\",\"style\":{\"fontSize\":\"120%\"}}],[\"$\",\"i\",null,{\"className\":\"bi bi-chevron-down\"}]]}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"#\",\"children\":\"中文\"}]}],[\"$\",\"li\",null,{\"children\":[\"$\",\"a\",null,{\"href\":\"/en\",\"children\":\"English\"}]}]]}]]}]]}],[\"$\",\"i\",null,{\"className\":\"bi bi-list mobile-nav-toggle\"}]]}]]}]}],[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"zh\",\"children\",\"(ioltw)\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}],[\"$\",\"footer\",null,{\"id\":\"footer\",\"children\":[[\"$\",\"div\",null,{\"className\":\"footer-top\",\"children\":[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[\"$\",\"div\",null,{\"className\":\"row\",\"children\":[[\"$\",\"div\",null,{\"className\":\"col-lg-4 col-md-12\",\"children\":[\"$\",\"div\",null,{\"className\":\"footer-info\",\"children\":[[\"$\",\"h3\",null,{\"children\":\"臺灣語言學奧林匹亞\"}],[\"$\",\"p\",null,{\"children\":[[\"$\",\"strong\",null,{\"children\":\"Email:\"}],\" ioltwtwiol@gmail.com\",[\"$\",\"br\",null,{}],[\"$\",\"strong\",null,{\"children\":\"主辦單位:\"}],\" 國立台灣大學語言學研究所\",[\"$\",\"br\",null,{}],[\"$\",\"strong\",null,{\"children\":\"協辦單位:\"}],\" 國立台灣大學文學院\",[\"$\",\"br\",null,{}],[\"$\",\"strong\",null,{\"children\":\"聯絡電話:\"}],\" (02) 3366-4105\"]}],[\"$\",\"div\",null,{\"className\":\"social-links mt-3\",\"children\":[[\"$\",\"a\",null,{\"href\":\"https://www.facebook.com/Taiwan.Olympiad.in.Linguistics\",\"className\":\"facebook\",\"children\":[\"$\",\"i\",null,{\"className\":\"bx bxl-facebook\"}]}],[\"$\",\"a\",null,{\"href\":\"https://www.instagram.com/taiwan.olympiad.in.linguistics/\",\"className\":\"instagram\",\"children\":[\"$\",\"i\",null,{\"className\":\"bx bxl-instagram\"}]}],[\"$\",\"a\",null,{\"href\":\"https://www.youtube.com/@ioltw\",\"className\":\"youtube\",\"children\":[\"$\",\"i\",null,{\"className\":\"bx bxl-youtube\"}]}]]}]]}]}],[\"$\",\"div\",null,{\"className\":\"col-lg-3 col-md-6 footer-links\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"相關連結\"}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bx-chevron-right\"}],\" \",[\"$\",\"a\",null,{\"href\":\"https://ioltw.github.io/scifair-2024/\",\"children\":\"第三屆語言科學科展 (2024)\"}]]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bx-chevron-right\"}],\" \",[\"$\",\"a\",null,{\"href\":\"https://ioling.org/\",\"children\":\"國際語奧\"}]]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bx-chevron-right\"}],\" \",[\"$\",\"a\",null,{\"href\":\"https://aplo.asia/\",\"children\":\"亞太語奧\"}]]}]]}]]}],[\"$\",\"div\",null,{\"className\":\"col-lg-3 col-md-6 footer-links\",\"children\":[[\"$\",\"h4\",null,{\"children\":\"請支持臺灣語奧！\"}],[\"$\",\"ul\",null,{\"children\":[[\"$\",\"li\",null,{\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bx-chevron-right\"}],\" \",[\"$\",\"a\",null,{\"href\":\"https://www.facebook.com/Taiwan.Olympiad.in.Linguistics\",\"children\":\"追蹤 FB 粉專\"}]]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bx-chevron-right\"}],\" \",[\"$\",\"a\",null,{\"href\":\"https://shukai.typeform.com/to/xHgP9m\",\"children\":\"加入團隊\"}]]}],[\"$\",\"li\",null,{\"children\":[[\"$\",\"i\",null,{\"className\":\"bx bx-chevron-right\"}],\" \",[\"$\",\"a\",null,{\"href\":\"/zh/donation\",\"children\":\"捐款贊助\"}]]}]]}]]}]]}]}]}],[\"$\",\"div\",null,{\"className\":\"container\",\"children\":[[\"$\",\"div\",null,{\"className\":\"copyright\",\"children\":\"© 台灣語言學奧林匹亞競賽, 2024. 最近更新日期：2025/1/21\"}],[\"$\",\"div\",null,{\"className\":\"credits\",\"children\":[\"Designed by \",[\"$\",\"a\",null,{\"href\":\"https://bootstrapmade.com/\",\"children\":\"BootstrapMade\"}]]}]]}]]}]]],null],null]},[null,[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",\"zh\",\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\"}]],null]},[[null,[\"$\",\"html\",null,{\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"meta\",null,{\"charSet\":\"utf-8\"}],[\"$\",\"meta\",null,{\"content\":\"width=device-width, initial-scale=1.0\",\"name\":\"viewport\"}],[\"$\",\"link\",null,{\"href\":\"/img/header_and_footer/logo_from_fb.png\",\"rel\":\"icon\"}],[\"$\",\"link\",null,{\"href\":\"/img/header_and_footer/logo_from_fb.png\",\"rel\":\"apple-touch-icon\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.googleapis.com\"}],[\"$\",\"link\",null,{\"rel\":\"preconnect\",\"href\":\"https://fonts.gstatic.com\"}],[\"$\",\"link\",null,{\"href\":\"https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900\u0026display=swap\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/vendor/animate.css/animate.min.css\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/vendor/bootstrap/css/bootstrap.min.css\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/vendor/bootstrap-icons/bootstrap-icons.css\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/vendor/boxicons/css/boxicons.min.css\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/vendor/glightbox/css/glightbox.min.css\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/vendor/remixicon/remixicon.css\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/vendor/swiper/swiper-bundle.min.css\",\"rel\":\"stylesheet\"}],[\"$\",\"link\",null,{\"href\":\"/css/global.css\",\"rel\":\"stylesheet\"}]]}],[\"$\",\"body\",null,{\"children\":[[\"$\",\"$L3\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"errorScripts\":\"$undefined\",\"template\":[\"$\",\"$L4\",null,{}],\"templateStyles\":\"$undefined\",\"templateScripts\":\"$undefined\",\"notFound\":[[\"$\",\"title\",null,{\"children\":\"404: This page could not be found.\"}],[\"$\",\"div\",null,{\"style\":{\"fontFamily\":\"system-ui,\\\"Segoe UI\\\",Roboto,Helvetica,Arial,sans-serif,\\\"Apple Color Emoji\\\",\\\"Segoe UI Emoji\\\"\",\"height\":\"100vh\",\"textAlign\":\"center\",\"display\":\"flex\",\"flexDirection\":\"column\",\"alignItems\":\"center\",\"justifyContent\":\"center\"},\"children\":[\"$\",\"div\",null,{\"children\":[[\"$\",\"style\",null,{\"dangerouslySetInnerHTML\":{\"__html\":\"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}\"}}],[\"$\",\"h1\",null,{\"className\":\"next-error-h1\",\"style\":{\"display\":\"inline-block\",\"margin\":\"0 20px 0 0\",\"padding\":\"0 23px 0 0\",\"fontSize\":24,\"fontWeight\":500,\"verticalAlign\":\"top\",\"lineHeight\":\"49px\"},\"children\":\"404\"}],[\"$\",\"div\",null,{\"style\":{\"display\":\"inline-block\"},\"children\":[\"$\",\"h2\",null,{\"style\":{\"fontSize\":14,\"fontWeight\":400,\"lineHeight\":\"49px\",\"margin\":0},\"children\":\"This page could not be found.\"}]}]]}]}]],\"notFoundStyles\":[]}],[[\"$\",\"script\",null,{\"src\":\"/vendor/bootstrap/js/bootstrap.bundle.min.js\",\"defer\":true}],[\"$\",\"script\",null,{\"src\":\"/vendor/glightbox/js/glightbox.min.js\",\"defer\":true}],[\"$\",\"script\",null,{\"src\":\"/vendor/isotope-layout/isotope.pkgd.min.js\",\"defer\":true}],[\"$\",\"script\",null,{\"src\":\"/vendor/swiper/swiper-bundle.min.js\",\"defer\":true}],[\"$\",\"script\",null,{\"src\":\"/vendor/waypoints/noframework.waypoints.js\",\"defer\":true}],[\"$\",\"script\",null,{\"src\":\"/vendor/php-email-form/validate.js\",\"defer\":true}],[\"$\",\"script\",null,{\"src\":\"https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js\",\"defer\":true}],[\"$\",\"script\",null,{\"src\":\"/js/main.js\",\"defer\":true}]]]}]]}]],null],null],\"couldBeIntercepted\":false,\"initialHead\":[null,\"$L5\"],\"globalErrorComponent\":\"$6\",\"missingSlots\":\"$W7\"}]\n"])</script><script>self.__next_f.push([1,"5:[[\"$\",\"meta\",\"0\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"meta\",\"1\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"2\",{\"children\":\"最新消息 - 臺灣語言學奧林匹亞 Taiwan Olympiad in Linguistics\"}],[\"$\",\"link\",\"3\",{\"rel\":\"icon\",\"href\":\"/favicon.ico\",\"type\":\"image/x-icon\",\"sizes\":\"803x805\"}]]\n2:null\n"])</script><next-route-announcer style="position: absolute;"></next-route-announcer></body>
-  
-</body>
-</html>
+
+		      
+	<div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className='bx bxs-pin'></i>
+            <h4><b>2025/01/15 台灣語奧解題營開放啦！</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+      	      本次解題營活動日期為2/5至2/7三日，舉辦於臺大文學院演講廳。報名期限為1/15-1/21，詳情請參照報名系統內資訊，名額有限，請儘速報名喔！
+        	    </p>
+            <p>
+            🔔小提醒：以前曾註冊過的同學，仍須再註冊一次喔！每年因考生資料眾多，皆會清除往年資料。
+            </p>
+        	    <p>
+        	    <b>報名連結：</b><a href="https://reg.ioltw.org" target="_blank" rel="noopener noreferrer">https://reg.ioltw.org</a>
+        	    </p>
+        	    <p>
+            <a href="/img/recent_attachments/91a809f9-ad5f-45c4-8cd5-17f8aaf0e622.jpg" target="_blank"><img src="/img/recent_attachments/91a809f9-ad5f-45c4-8cd5-17f8aaf0e622.jpg" alt="台灣語奧解題營" title="台灣語奧解題營" style={{width: "60%"}}/></a>
+            </p>
+            <p>
+            <a href="/img/recent_attachments/c2def618-ffb7-47df-b3da-2670a8b829db.jpg" target="_blank"><img src="/img/recent_attachments/c2def618-ffb7-47df-b3da-2670a8b829db.jpg" alt="台灣語奧解題營時程表" title="台灣語奧解題營時程表" style={{width: "60%"}}/></a>
+            </p>
+          </div>
+        </div>
+	      
+        <div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className='bx bxs-pin'></i>
+            <h4><b>2024/09/08　2024-2025 活動日期預告（部分）</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+            <a href="/img/recent_attachments/upcoming_events.png" target="_blank"><img src="/img/recent_attachments/upcoming_events.png" alt="2024-25 Upcoming Events" title="2024-25 Upcoming Events" style={{width: "60%"}}/></a>
+            </p>
+          </div>
+        </div>
+        
+        <div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className='bx bxs-pin'></i>
+            <h4><b>2024/08/18　IOL 2024 國際語奧台灣隊獲個人賽三銀一銅一佳作、團體賽一銅佳績！</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+              恭喜台灣隊的國手們！新聞報導：<br/>
+              <a href="https://www.cna.com.tw/news/aopl/202407310039.aspx">【中央社新聞】國際語奧台灣隊大放異彩 勇奪多項榮譽</a><br/>
+              <a href="https://sec.ntu.edu.tw/epaper/article.asp?num=1612&sn=29180">【臺大校訊】臺大教授帶領臺灣代表隊勇奪「2024國際語言學奧林匹亞競賽」佳績並取得2025主辦權</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className='bx bxs-pin'></i>
+            <h4><b>2024/07/05　第三屆臺灣中學生語言科學科展 開始報名！</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+              有興趣做語言學／語言科學的探索嗎？快來報名科展把你的發現分享給大家！<br/>
+							歡迎點選：<a href="https://ioltw.github.io/scifair-2024/">【第三屆科展網站】</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className='bx bxs-pin'></i>
+            <h4><b>2024/06/04　第一&第二屆語言解謎鐵人賽【試題及參考解答】</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+              <a href="https://drive.google.com/drive/u/0/folders/1tGe6TU9UxLISKfsq7jnQ0szTA5PdK63L">【試題及參考解答】</a>
+            </p>
+          </div>
+        </div>
+
+        <div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className='bx bxs-pin'></i>
+            <h4><b>2024/05/30　第二屆語言解謎鐵人賽【活動花絮】</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+              第二屆語言解謎鐵人賽於2024/05/25（六）順利舉辦，相信大家在三小時的合作解謎中都對語言學有更深的投入跟了解，歡迎大家透過我們的花絮影像回顧這次比賽，也歡迎繼續支持台灣語奧、語言學科展以及語言解謎鐵人賽！
+              <a href="https://drive.google.com/drive/u/0/folders/1IbExfv24ihhGj-KSAADmbPd4Y4xt9BI-">【照片&影片】</a>
+            </p>
+            <p>
+              <img src="/img/gallery/lingpuz/DSCF2961.JPG" style={{width: "100%"}} alt=""/>
+            </p>
+          </div>
+        </div>
+
+        <div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className='bx bxs-pin'></i>
+            <h4><b>2024/04/25　國際語奧 IOL2024 臺灣代表隊【國手錄取名單】</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+              恭喜台灣隊獲得 2024 亞太語奧 1 金 3 銀 4 銅， 與中國、日本隊並列第一！！<a href="https://aplo.asia/results/aplo-2024-results/">【亞太語奧官方成績】</a><a href="/img/recent_attachments/TOL2024_team_and_APLO2024_rank.pdf">【臺灣國手名單】</a>
+              <br/>
+              <a href="/img/recent_attachments/APLO2024_results.jpg" target="_blank"><img src="/img/recent_attachments/APLO2024_results.jpg" alt="APLO2024_results" title="APLO2024_results" style={{width: "60%"}}/></a>
+            </p>
+          </div>
+        </div>
+
+        <div className="row faq-item d-flex align-items-stretch">
+          <div className="col-lg-5">
+            <i className="bx bx-help-circle"></i>
+            <h4><b>... 更早以前的消息</b></h4>
+          </div>
+          <div className="col-lg-7">
+            <p>
+              請見 <a href="https://lope.linguistics.ntu.edu.tw/ioltw/zh/">【臺灣語奧舊版網站】</a>
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+  );
+}
+
